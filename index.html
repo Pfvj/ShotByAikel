@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShotByAikel - Cinematographer/Videographer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        .about-me, .portfolio, .contact {
+            margin: 20px 0;
+        }
+        .portfolio img, .portfolio video {
+            max-width: 100%;
+            height: auto;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form input, .contact form textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact form button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ShotByAikel</h1>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about" class="about-me">
+        <h2>About Me</h2>
+        <p>
+            I am a cinematographer/videographer based in the Imperial Valley. I focus on creating professional-looking footage with minimal overhead and efficient production for local businesses and artists. My goal is to deliver high-quality visual content that meets the unique needs of each client, ensuring their vision is brought to life.
+        </p>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <p>Here are some examples of my work:</p>
+        <div>
+            <img src="path/to/photo1.jpg" alt="Project 1">
+            <img src="path/to/photo2.jpg" alt="Project 2">
+            <video controls>
+                <source src="path/to/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls>
+                <source src="path/to/video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form action="submit_form.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
